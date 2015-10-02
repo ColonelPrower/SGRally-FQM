@@ -1,0 +1,17 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{
+	font-family:Tahoma, Geneva, sans-serif;
+	background-color:#C0CDD5;
+}
+h1{
+	font-family:Verdana, Geneva, sans-serif;
+}
+h2{
+	font-family:Verdana, Geneva, sans-serif;
+}
+img{
+	max-height:150px;
+	max-width:150px;
+}

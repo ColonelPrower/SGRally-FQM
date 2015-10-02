@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#nav{
+	font-family:Verdana, Geneva, sans-serif;
+	list-style:none;
+	margin:0px;
+	padding:2px;
+	
+
+	/*list-style-image:url(../imagenes/vineta.png);
+	text-decoration:none;
+	text-outline:none;*/
+
+	
+}
+#nav li a {
+	display:block; //Convertimos el vínculo en un bloque.
+	width:100px;
+	height:30px;
+	text-decoration:none;
+	text-align:center;
+	font-size:11px;
+	font-style:oblique;
+	color:#FFFFFF;
+	background-color:#366;
+	border-width:3px;
+
+}
+
+
+ul li ul {
+	text-decoration:none;
+	list-style:none;	
+	/*list-style-image:url(../imagenes/butt4.gif);*/
+    display:none;
+
+}

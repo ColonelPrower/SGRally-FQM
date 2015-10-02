@@ -1,0 +1,5 @@
+Respalde el archivo indexBAK.php en caso de problemas para accesar al sistema, renombre este archivo quitando las mayusculas BAK para poder crear un nuevo usuario 
+en caso de emergencia.
+
+Evite tener este archivo en el servidor para evitar intrusiones no autorizadas.
+

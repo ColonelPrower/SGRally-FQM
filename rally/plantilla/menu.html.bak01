@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script type="text/javascript" src="estilos/jquery.js"> </script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		//muestra y oculta los menus
+		$('ul li:has(ul)').hover(
+		function(e)
+		{
+			$(this).find('ul').css({display:"block"});
+		},
+		function(e)
+		{
+			$(this).find('ul').css({display:"none"});
+		}
+		);
+	});
+		
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>menu</title>
+<link href="estilos/menu.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+body {
+	background-color: #007AAB;
+	background-image: url(imagenes/fondo_menu.jpg);
+	background-repeat: repeat-y;
+}
+</style>
+</head>
+
+<body>
+<ul id="nav">
+  <li><a href="central.html" target="mainFrame">Inicio</a></li>
+<li><a href="#">Equipos</a>
+<ul>
+  <li><a href="../consultas/consultageneral.php" target="mainFrame">mostrar todos</a></li>
+    <li><a href="../consultas/consultaequipo.php" target="mainFrame">consultar</a></li>
+    <li><a href="../Altas/altaequipo.htm" target="mainFrame">nuevo</a></li>
+    <li><a href="../Bajas/borrarequipo.php" target="mainFrame">borrar</a></li>
+    <li><a href="../modificacion/modificar_equipo.html" target="mainFrame">modificar</a></li>
+</ul>
+</li>
+<li><a href="#">Participantes</a>
+<ul>
+  <li><a href="../consultas/consultagral_participantes.php" target="mainFrame">mostrar todos</a></li>
+    <li><a href="../Bajas/borrarparticipante.htm" target="mainFrame">borrar</a></li>
+    <li><a href="../modificacion/modificar_participante.html" target="mainFrame">modificar</a></li>
+</ul>
+</li>
+<li><a href="#">Reactivos</a>
+<ul>
+  <li><a href="../Altas/alta_reactivos.htm" target="mainFrame">nuevo</a></li>
+    <li><a href="../Bajas/eliminar_reactivo.htm" target="mainFrame">borrar</a></li>
+    <li><a href="../consultas/consultagral_reactivos.php" target="mainFrame">consultar</a></li>
+    <li><a href="../modificacion/modificar_reactivo.htm" target="bottomFrame">modificar</a></li>
+</ul>
+</li>
+<li><a href="#">Profesores
+  </a>
+  <ul>
+    <li><a href="../Altas/alta_maestro.html" target="mainFrame">nuevo</a></li>
+    <li><a href="../Bajas/borrarmaestro.html" target="mainFrame">borrar</a></li>
+    <li><a href="../consultas/consultagral_maestros.php" target="mainFrame">consultar</a></li>
+    <li><a href="../modificacion/modificar_maestro.html" target="mainFrame">modificar</a></li>
+  </ul>
+</li>
+<li><a href="#">Mesas</a>
+<ul>
+  <li><a href="../Altas/alta_mesa.php" target="mainFrame">nueva</a></li>
+    <li><a href="../Bajas/eliminar_mesa.php" target="mainFrame">borrar</a></li>
+    <li><a href="../consultas/consulta_mesas.php" target="mainFrame">consultar</a></li>
+    <li><a href="../modificacion/modificar_mesa.php" target="mainFrame">modificar</a></li>
+</ul>
+</li>
+<li><a href="../Bajas/resetrally.htm" target="mainFrame">Reset Rally</a></li>
+<li><a href="../reportes/reportes.htm" target="mainFrame">Reportes</a></li>
+</ul>
+</dl>
+</body>
+</html>

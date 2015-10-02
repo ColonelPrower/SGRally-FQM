@@ -1,0 +1,105 @@
+<!-- Sistema de Administracion de Rally de Conocimientos de Fisica, Quimica y Matematicas
+    Formulario de Alta de Reactivos
+    Copyright (C) 2013  Alejandro Ramirez Reyes, Cesar Eduardo Mendoza Valencia
+	
+    Este programa es software libre: usted puede redistribuirlo y / o modificarlo
+    bajo los términos de la Licencia Pública General GNU publicada por
+    la Fundación para el Software Libre, ya sea la versión 3 de la Licencia, o
+    cualquier versión posterior.
+
+    Este programa se distribuye con la esperanza de que sea útil,
+    pero SIN NINGUNA GARANTÍA, incluso sin la garantía implícita de
+    COMERCIALIZACIÓN o IDONEIDAD PARA UN PROPÓSITO PARTICULAR. Consulte la
+    GNU General Public License para más detalles.
+
+	Debería haber recibido una copia de la Licencia Pública General de GNU
+    junto con este programa. Si no es así, consulte <http://www.gnu.org/licenses/>
+	
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>. -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>Nuevo Reactivo</title>
+		<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type">
+		<link href="../plantilla/estilos/paginas.css" rel="stylesheet" type="text/css">
+	</head>
+<body>
+	<h1 align="center">Crear Reactivo</h1>
+	<form action="modulos/alta_reactivos.php" method="post" enctype="multipart/form-data">
+	<table align="center" border="0" width="200">
+	<tbody>
+	<tr>
+	<td><b>Descripción</b></td>
+	<td><input name="des" id="des" size="100" type="text"></td>
+	</tr>
+	<tr>
+	<td><b>Foto Descripción</b></td>
+	<td><input name="fotodes" id="fotodes" type="file" ></td>
+	</tr>
+	<tr>
+	<td><b>Opción A </b></td>
+	<td><input name="opa" id="opa" size="50" type="text"></td>
+	</tr>
+	<tr>
+	<td><b>Foto opción A</b></td>
+	<td><input name="fotoa" id="fotoa" type="file"></td>
+	</tr>
+	<tr>
+	<td><b>Opción B</b></td>
+	<td><input name="opb" id="opb" size="50" type="text"></td>
+	</tr>
+	<tr>
+	<td><b>Foto Opción B</b></td>
+	<td><input name="fotob" id="fotob" type="file"></td>
+	</tr>
+	<tr>
+	<td><b>Opción C</b></td>
+	<td><input name="opc" id="opc" size="50" type="text"></td>
+	</tr>
+	<tr>
+	<td><b>Foto Opción C</b></td>
+	<td><input name="fotoc" id="fotoc" type="file"></td>
+	</tr>
+	<tr>
+	<td><b>Respuesta</b></td>
+	<td>
+	<select name="res"><option value="A">A</option><option value="B">B</option><option value="C">C</option></select>
+	</td>
+	</tr>
+	<tr>
+	<td><b>Nivel</b></td>
+	<td><input name="lvl" id="lvl" size="5" maxlength="1" type="text"></td>
+	</tr>
+	<tr>
+	<td><b>Materia</b></td>
+	<td>
+	<select name="mat"><option value="matematicas">matemáticas</option><option value="fisica">física</option><option value="quimica">química</option></select>
+	</td>
+	</tr>
+	</tbody>
+	</table>
+	<table width="100px" align="center">
+	<tr>
+		<td><b>Ajustar tiempo límite (mm:ss)</b></td>
+	</tr>
+	<tr>
+		<td><input type="text" name="minutos" value="0" size="3" maxlength="2" /></td>
+		<td>:</td>
+		<td><input type="text" name="segundos" value="0" size="3" maxlength="2" /></td>
+	</tr>
+	</table>
+	<p align="center"> <input name="Capturar" id="Capturar" value="Capturar" type="submit"> </p>
+	</form>
+</body>
+</html>
