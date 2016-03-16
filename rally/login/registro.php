@@ -69,12 +69,12 @@
             echo "El email ingresado no es válido. <a href='javascript:history.back();'>Reintentar</a>"; 
         }else { 
             // "limpiamos" los campos del formulario de posibles códigos maliciosos 
-            $usuario_nombre = mysqli_real_escape_string($_POST['usuario_nombre']); 
-            $usuario_clave = mysqli_real_escape_string($_POST['usuario_clave']); 
-            $usuario_email = mysqli_real_escape_string($_POST['usuario_email']); 
+            $usuario_nombre = mysqli_real_escape_string($conn,$_POST['usuario_nombre']); 
+            $usuario_clave = mysqli_real_escape_string($conn,$_POST['usuario_clave']); 
+            $usuario_email = mysqli_real_escape_string($conn,$_POST['usuario_email']); 
             // comprobamos que el usuario ingresado no haya sido registrado antes 
             $sql = mysqli_query($conn,"SELECT usuario_nombre FROM usuarios WHERE usuario_nombre='".$usuario_nombre."'"); 
-            if(mysqli_num_rows($sql) > 0) { 
+            if(mysqli_num_rows($sql) == 1) { 
                 echo "El nombre usuario elegido ya ha sido registrado anteriormente. <a href='javascript:history.back();'>Reintentar</a>"; 
             }else { 
                 $usuario_clave = md5($usuario_clave); // encriptamos la contraseña ingresada con md5 
