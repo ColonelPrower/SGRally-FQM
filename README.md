@@ -16,3 +16,9 @@ El proyecto lo que pretende es modernizar este evento por medio de un sistema we
 * Se ejecuta un script para crear un usuario administrador.
 
 Para mas información consulte el archivo PDF
+##Capturas
+
+![alt text](/screenshots/pantallaprincipal.png "Pantalla Principal")
+![alt text](/screenshots/participantesregistrados.png "Participantes Registrados")
+![alt text](/screenshots/P4240469.JPG "Sistema en Red Local LAN")
+
